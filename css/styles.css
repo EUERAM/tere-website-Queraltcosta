@@ -1,6 +1,16 @@
+:root {
+	--white: rgba(255,255,255,1);
+	--green: rgba(117,191,122,1);
+	--black: rgba(0,0,0,1);
+	--light-gray: rgba(158,157,162,1);
+	--gray: rgba(139,139,165,1);
+	--dark-gray: rgba(39,32,66,1);
+	--background: rgba(249,249,249,1);
+}
+
 header{
     padding-top:80px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 header .container{
@@ -11,7 +21,7 @@ header .container{
 }
 
 body{
-    background-color: #F9F9F9;
+    background-color: var(--background);
 }
 
 header ul{
@@ -30,7 +40,7 @@ header li{
 }
 
 header a{
-    color: var(--Dark-gray, #272042);
+    color: var(--dark-gray);
     font-family: "Inter";
     font-size: 18px;
     font-style: normal;
@@ -42,7 +52,7 @@ header a{
 }
 
 header a:hover{
-    color: #75bf7a;
+    color: var(--green);
     transform: scale(1.1); /* moure cap amunt */
 }
 
@@ -53,7 +63,7 @@ header a:hover{
     align-items: center;
     gap: 10px;
     border-radius: 5px;
-    background: var(--Green, #75BF7A);
+    background: var(--green);
     border: none;
     font-size: 18px;
     font-family: "Inter";
@@ -61,7 +71,7 @@ header a:hover{
     font-weight: 500;
     line-height: 26px; /* 144.444% */
     text-decoration: none;
-    color: white;
+    color: var(--white);
     transition: all 0.2s;
 }
 
@@ -76,7 +86,7 @@ button:hover{
 }
 
 .hero .title3{
-   color: var(--Black, #000);
+   color: var(--black);
     font-family: Inter;
     font-size: 64px;
     font-style: normal;
@@ -88,12 +98,12 @@ button:hover{
 }
 
 .hero .info-hero{
-    color: var(--Light-Gray, #9E9DA2);
+    color: var(--Light-Gray);
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 33px; /* 137.5% */
+    line-height: 33px; 
     margin-left: 80px;
     margin-top: 27px;
 
@@ -120,9 +130,9 @@ button:hover{
     gap: 10px;
     flex-shrink: 0; 
     border-radius: 5px;
-    background:#272042; 
+    background: var(--dark-gray); 
     border: none;
-    color: #FFF;
+    color: var(--white);
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -135,14 +145,14 @@ button:hover{
 
 .link .container{
     display: inline-flex;
-    background: #75bf7a; 
+    background: var(--green); 
     align-items: center;
     border-radius: 5px;
     margin-left: 80px;
 }
 
 .link .link-text{
-    color: #FFF;
+    color: var(--white);
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -155,7 +165,7 @@ button:hover{
 }
 
 .link .phone-number{
-    background: white;
+    background: var(--white);
     border-radius: 5px;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -177,7 +187,7 @@ button:hover{
 
 .link .button-link{
     border-radius: 5px;
-    background:#272042;
+    background: var(--dark-gray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,14 +198,14 @@ button:hover{
     font-weight: 700;
     line-height: 0px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     width: 260px;
     height: 66px;
     margin-right: 80px;
 }
 
 .title{
-    color: black;
+    color: var(--black);
     font-family: "Inter";
     font-size: 47px;
     font-weight: 900;
@@ -210,7 +220,7 @@ button:hover{
 }
 
 .how-it-works .subtitle{
-    color: #9E9DA2;
+    color: var(--light-gray);
     font-family: "Inter";
     font-size: 24px;
     font-weight: 300;
@@ -230,7 +240,7 @@ button:hover{
 }
 
 .columna1 .title1{
-    color: black;
+    color: var(--black);
     font-family: "Inter";
     font-size: 22px;
     font-weight: 800;
@@ -240,7 +250,7 @@ button:hover{
 }
 
 .columna1 .info1{
-    color: #9E9DA2;
+    color: var(--light-gray);
     font-family: "Inter";
     font-size: 18px;
     font-weight: 300;
@@ -271,7 +281,7 @@ button:hover{
 }
 
 .columna3 .title1{
-    color: black;
+    color: var(--black);
     font-family: "Inter";
     font-size: 22px;
     font-weight: 800;
@@ -281,7 +291,7 @@ button:hover{
 }
 
 .columna3 .info1{
-    color: #9E9DA2;
+    color: var(--light-gray);
     font-family: "Inter";
     font-size: 18px;
     font-weight: 300;
@@ -314,7 +324,7 @@ button:hover{
     gap: 262px;
     flex-shrink: 0;
     border-radius: 5px;
-    background: white;
+    background: var(--white);
     margin-bottom: 67px;
     margin-left: 81px;
     margin-right: 299px;
@@ -339,7 +349,7 @@ button:hover{
 }
 
 .number-title .text-number{
-   color: #75BF7A;
+   color: var(--green);
     font-family: Inter;
     font-size: 88px;
     font-style: normal;
@@ -348,7 +358,7 @@ button:hover{
 }
 
 .number-title .title2{
-    color: #000;
+    color: var(--black);
     font-family: Inter;
     font-size: 34px;
     font-style: normal;
@@ -357,7 +367,7 @@ button:hover{
 }
 
 .text .info2{
-    color: #9E9DA2;
+    color: var(--light-gray);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -375,7 +385,7 @@ button:hover{
     gap: 262px;
     flex-shrink: 0;
     border-radius: 5px;
-    background: white;
+    background: var(--white);
     margin-bottom: 67px;
     margin-left: 299px;
     margin-right: 81px;
@@ -401,7 +411,7 @@ button:hover{
     gap: 262px;
     flex-shrink: 0;
     border-radius: 5px;
-    background: white;
+    background: var(--white);
     margin-bottom: 237px;
     margin-left: 81px;
     margin-right: 299px;
@@ -416,7 +426,7 @@ button:hover{
 }
 
 footer{
-    background-color: #FFF;
+    background-color: var(--white);
 }
 
 footer .container{
@@ -425,8 +435,8 @@ footer .container{
     width: 100%;
     height: 252px;
     align-self: center;
-    border-bottom: 1px solid #8B8BA5;
-    border-top: 1px solid #8B8BA5;
+    border-bottom: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
     margin-left: 0px;
 }
 
@@ -443,7 +453,7 @@ footer .info-footer{
 }
 
 footer .title-footer{
-    color: var(--Dark-gray, #272042);
+    color: var(--dark-gray);
     font-family: Inter;
     font-size: 22px;
     font-style: normal;
@@ -455,7 +465,7 @@ footer .title-footer{
 
 
 footer .text-footer{
-    color: var(--Gray, #8B8BA5);
+    color: var(--gray);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -467,7 +477,7 @@ footer .text-footer{
 
 footer .button-small{
     border-radius: 5px;
-    background:#272042;
+    background:var(--dark-gray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,7 +488,7 @@ footer .button-small{
     font-weight: 700;
     line-height: 0px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     width: 174px;
     height: 46px;
     margin-right: 50px;
@@ -490,7 +500,7 @@ footer .container2{
 }
 
 footer .text2-footer{
-    color: var(--Green, #75BF7A);
+    color: var(--green);
     text-align: center;
     font-family: Inter;
     font-size: 16px;
